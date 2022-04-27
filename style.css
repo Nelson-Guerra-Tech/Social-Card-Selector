@@ -2,82 +2,77 @@
 
 * {
   margin: 0;
-  font-family: sans-serif, "Poppins";
+  font-family: "Poppins", sans-serif;
 }
 
 body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
   width: 100vw;
-  background-color: #0c0e07;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-color: rgb(24, 24, 24);
 }
 
-.social-card-container {
-  height: 35rem;
-  width: 25rem;
-  border-radius: 6px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.card-holder {
-  height: 35rem;
-  /* width: 100vw; */
-  /* background-color: aquamarine; */
-  background-color: rgb(31, 31, 31);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+.card-container {
+  width: 45rem;
+  height: 25rem;
   border-radius: 6px;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
-.hero-img {
-  width: 25rem;
-  position: relative;
+.hero-wallpaper {
+  height: 25rem;
 }
 
-.overlay {
-  position: absolute;
+.hero-info {
+  height: 25rem;
+  width: 30rem;
+  background-color: rgb(17, 17, 17);
   color: azure;
-  font-weight: bold;
-  text-align: left;
-  font-size: 30px;
-  padding: 1rem;
-  height: 33rem;
-  width: 23rem;
-  border-radius: 6px;
-  background-color: rgba(0, 0, 0, 0.47);
-  transition: all 0.3s ease-out;
-  cursor: pointer;
 }
 
-.overlay p {
+.hero-logo {
+  width: 3rem;
+  padding: 1rem 1rem 0rem 0rem;
+  float: right;
+}
+
+.hero-info h1 {
+  font-size: 3rem;
+  padding: 2rem 2rem 0rem 2rem;
+  font-weight: bold;
   letter-spacing: 3px;
+}
+
+.hero-info p {
+  font-size: 1.5rem;
+  padding: 2rem 1rem 2rem 2rem;
   font-weight: lighter;
 }
 
-.overlay:hover {
-  background-color: rgba(0, 0, 0, 0);
-}
-
-.hero-name {
-  top: 5rem;
-}
-
-.description {
-  font-size: 1rem;
-}
-
-.image-container {
+.btn-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  overflow: hidden;
-  height: 35rem;
-  width: 25rem;
+  width: 15rem;
+  margin-left: 6.5rem;
+}
+
+.btn {
+  height: 2rem;
+  width: 5rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  background-color: rgb(83, 120, 233);
+}
+
+.btn:hover {
+  background-color: rgb(45, 45, 45);
+  color: azure;
 }
