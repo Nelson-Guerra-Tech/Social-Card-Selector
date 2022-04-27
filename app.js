@@ -35,3 +35,9 @@ const heroLogo = document.querySelector(".hero-logo");
 // targeting the btns
 const nextBtn = document.querySelector(".next-btn");
 const prevBtn = document.querySelector(".prev-btn");
+
+// event listener for the next btn
+nextBtn.addEventListener("click", function () {});
+
+// event listener for the prev btn
+prevBtn.addEventListener("click", function () {});
